@@ -1,6 +1,6 @@
 
 - Buscar aquí, en vano será, la Fuerza en otro lado está.
-- Este archivo leer podés, pero pista hallar no lo harés.=
+- Este archivo leer podés, pero pista hallar no lo harés.
 - Curioso sos, hasta acá llegás, pero la verdad aquí no encontrarás.
 - Camino torcido este lugar será, la senda correcta más lejos está.
 - Mucho ruido y nada verás, el secreto en sombras esperarás.
