@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Enigma de Yoda</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #00ff99;
+      padding-top: 60px;
+    }
+
+    .subtitulo {
+      font-size: 1.8em;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99;
+      margin-bottom: 30px;
+    }
+
+    img {
+      margin-top: 20px;
+      filter: drop-shadow(0 0 20px #00ff99);
+    }
+
+    .frase-final {
+      margin-top: 15px;
+      font-size: 1.2em;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <div class="content">
+    <div class="subtitulo">
+      “Lo que tus ojos ven, verdad no será,<br>
+      en lo invisible la clave brillará.<br>
+      Paciencia tendrás si atento mirás,<br>
+      en silencio la respuesta hallarás.”
+    </div>
+
+    <img src="yoda.jpg" alt="Yoda" width="700">
+    <div class="frase-final">Busca en la oscuridad, joven padawan…</div>
+  </div>
+
+  <!-- ====================== -->
+  <!-- ====================== -->
+  <!-- Aquí podría estar la respuesta, pero no está -->
+  <!-- Quizás el sable de luz esconda la pista... o quizás no -->
+  <!-- La clave está en Dagobah? No, joven padawan -->
+  <!-- Confusión el camino es, claridad hallarás si paciencia tienes -->
+  <!-- [FAKE HINT] Tal vez ROT13, prueba deberías -->
+  <!-- [FAKE HINT] Contraseña secreta: order66 ... -->
+  <!-- [INFO] Jedi archives corrupted... -->
+  <!-- [ERROR] Pista perdida en Tatooine -->
+
+  <script>
+    // Funciones inútiles para despistar
+    function saberDeLuz() {
+      return "Azul"; // O será verde?
+    }
+
+    function ladoOscuro() {
+      let sith = true;
+      if (sith) {
+        return "Palpatine"; // pista? no...
+      }
+      return null;
+    }
+
+    function calcularMidiChlorians() {
+      // Número totalmente irrelevante
+      return Math.floor(Math.random() * 20000);
+    }
+
+    function pistaOculta() {
+      // Aquí nada hallarás, joven aprendiz
+      return undefined;
+    }
+
+    // Declaraciones falsas
+    var maestro = "Yoda";
+    var aprendiz = "Luke";
+    var planeta = "Endor";
+    var password = "deathstar"; // jajaja, no lo es
+
+    // Comentarios engañosos
+    // Quizás mirar el CSS debas...
+    // El secreto está en los comentarios? Tal vez no...
+    // SHA1 la respuesta es? Hmm... tal vez no.
+    // HEX convertir debes, pero aquí no.
+  </script>
+
+  <!-- Pista real -->
+  <!-- Respuesta hallarás si este HEX descifrarás:
+  456e20736f6d6272617320646520536c61636b206c61207665726461642068616c6c61726173
+  -->
+  <!-- (Sugerencia: pasar por CyberChef → From Hex) -->
+
+  <script>
+    const canvas = document.getElementById('stars');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    for (let i = 0; i < 200; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 1.5,
+        dx: (Math.random() - 0.5) * 0.5,
+        dy: (Math.random() - 0.5) * 0.5
+      });
+    }
+
+    function drawStars() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#00ff99';
+      stars.forEach(star => {
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        ctx.fill();
+        star.x += star.dx;
+        star.y += star.dy;
+        if (star.x < 0 || star.x > canvas.width) star.dx *= -1;
+        if (star.y < 0 || star.y > canvas.height) star.dy *= -1;
+      });
+      requestAnimationFrame(drawStars);
+    }
+    drawStars();
+  </script>
+</body>
+</html>
