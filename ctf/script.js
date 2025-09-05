@@ -1,4 +1,9 @@
-// Nada hallarás aquí, joven padawan.
-// Camino torcido este lugar será,
-// la senda correcta más lejos está..
-function useless() { return null; }
+DB_USER=admin
+DB_PASSWORD=P@ssw0rd123
+JWT_SECRET=supersecrettoken
+REDIS_URL=redis://localhost:6379
+
+NzI0ZjAzNTQxMTUxMDAxYWEyYzEzODUyZmRiMWJmOTRkZTAzM2E4YmQwOTJkY2EzNjY3Yzk5NGMxM2RkMTZkYmFmNGMwY2RmOGRmNTkzYzQyNTAyNjQxYWIxNGMyMDdjZTlhNGJlNjk5ZjYyMDliNjg0NTViZThjYmI0ZjEyMjY=
+
+API_KEY=sk-fake-ABC123456789
+
