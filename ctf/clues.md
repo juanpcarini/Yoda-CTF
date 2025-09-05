@@ -1,9 +1,16 @@
+# Logs 
 
-- Buscar aquí, en vano será, la Fuerza en otro lado está.
-- Este archivo leer podés, pero pista hallar no lo harés.
-- Curioso sos, hasta acá llegás, pero la verdad aquí no encontrarás.
-- Camino torcido este lugar será, la senda correcta más lejos está.
-- Mucho ruido y nada verás, el secreto en sombras esperarás.
-- Tiempo perderás si aquí seguís, otra puerta abrir deberás si querés seguir.
-- De sabio poco tendrás, si en este archivo te quedás.
-- La pista real no hallarás, solo confusión aquí tendrás.
+2025-09-05 13:20:55 - INFO - Archivo procesado correctamente.
+2025-09-05 13:20:56 - WARN - Entrada inválida en línea 23.
+2025-09-05 13:20:58 - ERROR - pista: "404 not found".
+2025-09-05 13:21:02 - INFO - Reinicio de módulo completado.
+
+---
+
+
+
+- random_key: 1234567890abcdef
+- user_test: padawan
+- hash_test: 098f6bcd4621d373cade4e832627b4f6
+- config_flag: false
+- otra_linea: nada_que_ver
