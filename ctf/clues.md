@@ -1,4 +1,3 @@
-# Pistas falsas
 
 - Buscar aquí, en vano será, la Fuerza en otro lado está.
 - Este archivo leer podés, pero pista hallar no lo harés.
