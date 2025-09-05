@@ -1,7 +1,7 @@
 DB_USER=admin
 DB_PASSWORD=P@ssw0rd123
 JWT_SECRET=supersecrettoken
-REDIS_URL=redis://localhost:6379
+REDIS_URL=redis://localhost:637
 
 "En bloques de dieciséis mi fuerza hallarás",
 "ni hash ni cifra eterna jamás serás.",
